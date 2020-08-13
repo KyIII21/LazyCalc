@@ -13,6 +13,7 @@
 		4E29C6D224B8F12B00058C39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E29C6D124B8F12B00058C39 /* Assets.xcassets */; };
 		4E29C6D524B8F12B00058C39 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E29C6D424B8F12B00058C39 /* Preview Assets.xcassets */; };
 		4E29C6D824B8F12B00058C39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E29C6D624B8F12B00058C39 /* LaunchScreen.storyboard */; };
+		4E96BE7324E58DFC004F7255 /* TryCatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E96BE7224E58DFC004F7255 /* TryCatch.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		4E29C6D424B8F12B00058C39 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4E29C6D724B8F12B00058C39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E29C6D924B8F12B00058C39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E96BE7124E58DFB004F7255 /* LazyCalc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LazyCalc-Bridging-Header.h"; sourceTree = "<group>"; };
+		4E96BE7224E58DFC004F7255 /* TryCatch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TryCatch.m; sourceTree = "<group>"; };
+		4E96BE7424E58FA0004F7255 /* TryCatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TryCatch.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +63,13 @@
 				4E29C6CB24B8F12400058C39 /* AppDelegate.swift */,
 				4E29C6CD24B8F12400058C39 /* SceneDelegate.swift */,
 				4E29C6CF24B8F12400058C39 /* ContentView.swift */,
+				4E96BE7424E58FA0004F7255 /* TryCatch.h */,
+				4E96BE7224E58DFC004F7255 /* TryCatch.m */,
 				4E29C6D124B8F12B00058C39 /* Assets.xcassets */,
 				4E29C6D624B8F12B00058C39 /* LaunchScreen.storyboard */,
 				4E29C6D924B8F12B00058C39 /* Info.plist */,
 				4E29C6D324B8F12B00058C39 /* Preview Content */,
+				4E96BE7124E58DFB004F7255 /* LazyCalc-Bridging-Header.h */,
 			);
 			path = LazyCalc;
 			sourceTree = "<group>";
@@ -107,6 +114,7 @@
 				TargetAttributes = {
 					4E29C6C724B8F12400058C39 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1160;
 					};
 				};
 			};
@@ -149,6 +157,7 @@
 				4E29C6CC24B8F12400058C39 /* AppDelegate.swift in Sources */,
 				4E29C6CE24B8F12400058C39 /* SceneDelegate.swift in Sources */,
 				4E29C6D024B8F12400058C39 /* ContentView.swift in Sources */,
+				4E96BE7324E58DFC004F7255 /* TryCatch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +293,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"LazyCalc/Preview Content\"";
 				DEVELOPMENT_TEAM = 2UCWL5WS3X;
@@ -295,6 +305,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Home.LazyCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LazyCalc/LazyCalc-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,6 +316,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"LazyCalc/Preview Content\"";
 				DEVELOPMENT_TEAM = 2UCWL5WS3X;
@@ -315,6 +328,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Home.LazyCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LazyCalc/LazyCalc-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
